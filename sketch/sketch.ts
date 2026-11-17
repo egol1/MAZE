@@ -14,7 +14,7 @@ let main = function (p: gameP5) {
     // Posted by Phil, modified by community. See post 'Timeline' for change history
     // Retrieved 2026-11-16, License - CC BY-SA 4.0
 
-    document.getElementById('download')!.addEventListener('click', () => {
+    document.getElementById('download')?.addEventListener('click', () => {
       let dl = document.createElement('a')
       dl.download = 'levels.json' // target filename
       dl.href = `data:application/json;charset=utf-8,${JSON.stringify(levels)}`
