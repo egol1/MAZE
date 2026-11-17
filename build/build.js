@@ -24,7 +24,8 @@ var main = function (p) {
         levelIndex = 0;
     };
     p.setup = function () {
-        document.getElementById('download').addEventListener('click', function () {
+        var _a;
+        (_a = document.getElementById('download')) === null || _a === void 0 ? void 0 : _a.addEventListener('click', function () {
             var dl = document.createElement('a');
             dl.download = 'levels.json';
             dl.href = "data:application/json;charset=utf-8,".concat(JSON.stringify(levels));
